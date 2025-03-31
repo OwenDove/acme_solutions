@@ -1,45 +1,61 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Reset and Base Styles */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: #fff;
-  color: #000;
+  padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header Styling */
 header {
-  background-color: #000 !important;
+  background-color: #000000;
   padding: 1.5em 2em;
 }
 
 header h1 {
   color: white;
-  margin: 0;
   font-size: 2.5em;
   font-weight: bold;
 }
 
-.container {
-  padding: 2em;
-  max-width: 700px;
+/* Main Form Layout */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
+.form-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2em;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Form Elements */
 h2 {
   font-size: 1.5em;
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 p {
-  font-size: 1em;
   margin-bottom: 1em;
+  font-size: 1em;
 }
 
-label {
+.checkbox-label {
   display: flex;
   align-items: center;
   margin-bottom: 1.5em;
 }
 
-input[type="checkbox"] {
+.checkbox-label input[type="checkbox"] {
   margin-right: 0.5em;
 }
 
